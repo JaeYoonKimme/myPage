@@ -12,15 +12,18 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <Image src="/profile.jpeg" alt="Profile Picture" width={160} height={160} />
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          JaeYoon Kim
         </h1>
-
+        
+        
+        
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          {' '}
+          <code className={styles.code}>Major in C.S. in Handong Global Univ.</code>
         </p>
-
+        {/*
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>
@@ -50,6 +53,7 @@ export default function Home() {
             </p>
           </a>
         </div>
+        */}
       </main>
 
       <footer className={styles.footer}>
@@ -58,9 +62,9 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          email : {' '}
           <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            pikachu@handong.ac.kr
           </span>
         </a>
       </footer>
