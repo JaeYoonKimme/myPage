@@ -46,7 +46,8 @@ export default function Home({allPostsData}) {
           ))}
         </ul>
       </section>
-
+      
+      {/*}
       <section className={'${utilStles.headingMd} ${utileStyles.padding1px}'}>
         <h2 className={utilStyles.headingLg}>Review (Book, Movie, etc...)</h2>
         <ul className={utilStyles.list}>
@@ -61,6 +62,7 @@ export default function Home({allPostsData}) {
           ))}
         </ul>
       </section>
+      {*/}
       
     </Layout>
   )
