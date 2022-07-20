@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Layout, {siteTitle} from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import styles from '../styles/others.module.css';
+import homeStyles from '../styles/Home.module.css';
 import { getSortedPostsData } from '../lib/posts';
 import Date from '../components/date';
 
@@ -54,24 +55,14 @@ export default function Home({allPostsData}) {
         <small><Link href="/post_list" passHref>view more</Link></small>
       </section>
       
-      {/*}
-      <section className={'${utilStles.headingMd} ${utileStyles.padding1px}'}>
-        <h2 className={utilStyles.headingLg}>Review (Book, Movie, etc...)</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({id, date, title}) => (
-            <li className={utilStyles.listItem} key={id}>
-              {title}
-              <br />
-              {id}
-              <br />
-              {date}
-            </li>
-          ))}
-        </ul>
-      </section>
-      {*/}
+      <br />
+      <br />
+      <br />
+
+      <footer className={homeStyles.footer}>
+      <small><Link href="/others" passHref>NPM team</Link></small>
+      </footer>
       
-      <Link href="/others" passHref><button className={styles.button}>NPM Members</button></Link>
     </Layout>
   )
 }
