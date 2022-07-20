@@ -1,6 +1,8 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import Layout, {siteTitle} from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
+import styles from '../styles/others.module.css';
 import { getSortedPostsData } from '../lib/posts';
 
 export async function getStaticProps() {
@@ -64,6 +66,7 @@ export default function Home({allPostsData}) {
       </section>
       {*/}
       
+      <Link href="/others" passHref><button className={styles.button}>NPM Members</button></Link>
     </Layout>
   )
 }
