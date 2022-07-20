@@ -39,7 +39,7 @@ export default function Home({allPostsData}) {
       <section className={'${utilStles.headingMd} ${utileStyles.padding1px}'}>
         <h2 className={utilStyles.headingLg}>TIL</h2>
         <ul className={utilStyles.list}>
-          {allPostsData.map(({id, date, title}) => (
+          {allPostsData.slice(0,5).map(({id, date, title}) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href={`/posts/${id}`}>
                 <a>{title}</a>
@@ -51,6 +51,7 @@ export default function Home({allPostsData}) {
             </li>
           ))}
         </ul>
+        <small><Link href="/post_list" passHref>view more</Link></small>
       </section>
       
       {/*}
