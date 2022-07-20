@@ -23,7 +23,7 @@ export default function Home({allPostsData}) {
         <title>{siteTitle}</title>
       </Head>
       <h1>Who Am I?</h1>
-      <section className={utilStyles.headingMd}>
+      <section className={'${utilStles.headingMd} ${utileStyles.padding1px}'}>
         <p>Major in C.S.💻 in Handong Global University.</p>
         <p>Interested in.. <br />Computer🧑🏻‍💻<br />Skate boarding🛹<br />Reading&Writing Short Stories📚</p>
         <p>
