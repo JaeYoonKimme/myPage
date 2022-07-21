@@ -22,44 +22,48 @@ export default function Home({allPostsData}) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <h1>Who Am I?</h1>
-      <section className={'${utilStles.headingMd} ${utileStyles.padding1px}'}>
+      <h1 className="mt-10 text-3xl text-sky-500 text-center">Who Am I?</h1>
+      <section className="mt-5 w-108 rounded-xl border p-6 shadow-xl">
         <p>Major in C.S.💻 in Handong Global University.</p>
         <p>Interested in.. <br />Computer🧑🏻‍💻<br />Skate boarding🛹<br />Reading&Writing Short Stories📚</p>
         <p>
           GitHub : {' '}
-          <a href="https://github.com/JaeYoonKimme" target="_blank" rel="noreferrer">Here</a>
+          <a href="https://github.com/JaeYoonKimme" target="_blank" rel="noreferrer" className="text-sky-400">Here</a>
         </p>
         <p>Email : pikachu@handong.ac.kr</p>
       </section>
-      <br />
-      <br />
-      <br />
 
-      <h1>POSTS</h1>
-      <section className={'${utilStles.headingMd} ${utileStyles.padding1px}'}>
-        <h2 className={utilStyles.headingLg}>TIL</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.slice(0,5).map(({id, date, title}) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
-        <small><Link href="/post_list" passHref>view more</Link></small>
+
+      <h1 className="mt-10 text-3xl text-sky-500 text-center">POSTS</h1>
+      <section className="mt-5 w-108 rounded-xl border p-6 shadow-xl">
+        <section>
+          <h2 className="text-2xl">TIL {' '}
+            <a className="text-xs text-slate-500">Today I Learend</a>
+          </h2>
+          <ul className="mt-5">
+            {allPostsData.slice(0,5).map(({id, date, title}) => (
+              <li className="mt-3" key={id}>
+                <Link href={`/posts/${id}`}>
+                  <a className="text-l font-medium hover:text-sky-500 hover:underline">{title}</a>
+                </Link>
+                <br />
+                <a className="text-slate-500 no-underline text-xs">
+                  <Date dateString={date} />
+                </a>
+              </li>
+            ))}
+          </ul>
+          <Link href="/post_list" passHref className="">
+            <a className="text-sky-500 text-xs">view more</a>
+          </Link>
+        </section>
       </section>
       
       <br />
       <br />
       <br />
 
-      <footer className={homeStyles.footer}>
+      <footer className="text-center">
       <small><Link href="/others" passHref>NPM team</Link></small>
       </footer>
       
