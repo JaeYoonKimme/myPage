@@ -64,7 +64,7 @@ export default function Home({allPostsData}) {
       <br />
 
       <footer className="text-center">
-      <small><Link href="/others" passHref>NPM team</Link></small>
+      <small><Link href="/otherss" passHref>NPM team</Link></small>
       </footer>
       
     </Layout>
