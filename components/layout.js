@@ -1,7 +1,5 @@
-import styles from './layout.module.css'
 import Head from 'next/head'
 import Image from 'next/image'
-import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
 const name = "JaeYoon Kim"
@@ -9,7 +7,7 @@ export const siteTitle = 'JaeYoon Kim'
 
 export default function Layout({children, home}){
     return (
-        <div className={styles.container}>
+        <div className="mx-auto mt-12 mb-24 max-w-xl">
             <Head>
                 <meta
                     name="name"
@@ -24,7 +22,7 @@ export default function Layout({children, home}){
                 <meta name="og:title" content={siteTitle} />
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
-            <header className={styles.header}>
+            <header className="flex flex-col items-center">
                 {home ? (
                     <>
                         <Image
@@ -44,7 +42,7 @@ export default function Layout({children, home}){
             </header>
             <main>{children}</main>
             {!home && (
-                <div className="hover:text-sky-500 hover:underline">
+                <div className="hover:text-sky-500 hover:underline mx-0 mb-0 mt-8">
                     <Link href="/">
                         <a>← Back to home</a>
                     </Link>
