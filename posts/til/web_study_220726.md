@@ -13,6 +13,8 @@ Rest api를 공부하고 Django에서 구현해 보았다
 - 관련된 tool을 사용해서 만든 서버를 테스트 해보았음(Postman)
 - rest api와는 다른 형태인 graph ql에 대해서도 알아보았다
 
+Tailwind css 를 사용하여 기존 웹사이트의 css파일을 대체하였다
+
 
 <!--
 Django에서 unit test기능을 공부하고 사용해보았다. (Model unit test, View unit test)
