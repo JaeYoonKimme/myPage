@@ -4,7 +4,7 @@ date: '2022-07-26'
 ---
 
 # TIL 2022_07_26
-Django에서 unit test기능을 공부하고 사용해보았다. (Model unit test, View unit test)
+Django에서 unit test기능을 공부하고 사용해보았다.
 - Model, View 각각 테스트 방법을 공부하고 적용해보았음
 - ORM 개념에 대해서 알아보았음 (정의, django의 lazy loading)
 
